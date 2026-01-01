@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For My Dearest Love ❤️</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -268,6 +268,12 @@
             letter-spacing: 0.08em;
             text-shadow: 0 0 20px rgba(255, 100, 150, 0.7), 0 0 30px rgba(255, 50, 100, 0.5);
         }
+        @media (max-width: 768px) {
+        body {
+        min-width: 1024px;
+        }
+}
+
     </style>
 </head>
 
@@ -344,7 +350,6 @@
                     <p id="final-wish" class="final-wish-text font-bold mt-6">Happy Birthday, My Sweetest Love! ❤️ Komal</p>
                 </div>
                 <button id="confetti-btn" class="anim-child btn text-white mt-4">Let's Celebrate!</button>
-
             </div>
         </main>
     </div>
