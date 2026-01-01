@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For My Dearest Love ❤️</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -45,7 +45,6 @@
             color: var(--text-light);
             overflow: hidden;
             touch-action: manipulation;
-            min-width: 1024px;
         }
 
         #aurora-background {
@@ -66,12 +65,12 @@
 
      
         #app {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             min-height: 100svh; /* important */
-             width: 100%;
-             position: relative;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
         }
 
         #step-container {
@@ -269,12 +268,6 @@
             letter-spacing: 0.08em;
             text-shadow: 0 0 20px rgba(255, 100, 150, 0.7), 0 0 30px rgba(255, 50, 100, 0.5);
         }
-        @media (max-width: 768px) {
-        body {
-        min-width: 1024px;
-        }
-}
-
     </style>
 </head>
 
