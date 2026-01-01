@@ -268,32 +268,10 @@
             letter-spacing: 0.08em;
             text-shadow: 0 0 20px rgba(255, 100, 150, 0.7), 0 0 30px rgba(255, 50, 100, 0.5);
         }
-        transform: rotate(90deg)
-        /* FORCE LANDSCAPE ON MOBILE (ONLY WAY) */
-        #orientation-wrapper {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
-
-        @media screen and (max-width: 1024px) {
-            #orientation-wrapper {
-                width: 100vh;
-                height: 100vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(90deg);
-                transform-origin: center center;
-            }
-        }
-
-
     </style>
 </head>
 
 <body>
-    <div id="orientation-wrapper">
     <div id="aurora-background"></div>
     <div id="canvas-container" style="position: fixed; top: 0; left: 0; z-index: 1;"></div>
 
@@ -371,7 +349,6 @@
             </div>
         </main>
     </div>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -532,7 +509,6 @@
             showStep(1);
         });
     </script>
-    </div>
 </body>
 
 </html>
